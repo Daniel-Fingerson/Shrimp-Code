@@ -1,0 +1,40 @@
+<h1>Shrimp GUI Internet Demo</h1>
+<h2><strong>&nbsp;User Select</strong></h2>
+<form action="/action_page.php"><select name="Users">
+<option value="User1">User1</option>
+<option value="saab">test</option>
+<option value="opel">test</option>
+<option value="audi">test</option>
+</select><input type="submit" /></form>
+<h2>ADC Select</h2>
+<select id="select_projects" multiple="multiple" name="select_projects" size="10">
+<option value="">Channel 0</option>
+<option value="">Channel 1</option>
+<option value="">Channel 2</option>
+<option value="">Channel 3</option>
+<option value="">Channel 4</option>
+<option value="">Channel 5</option>
+<option value="">Channel 6</option>
+  
+</select><form><input checked="checked" name="option" type="radio" value="validate" /> Validate<br /> <input name="option" type="radio" value="record" /> Record<br /> <input name="option" type="radio" value="plot" /> Display</form>
+
+<p>The above text is a form test for function that do nothing; :</p>
+<p>
+  The below text are tests for actually performing functions via python
+</p>
+
+Checkbox: <input type="checkbox" id="myCheck"  onclick="myFunction()">
+
+<p id="text" style="display:none">This should display data from selected channel</p>
+
+<script>
+function myFunction() {
+    var checkBox = document.getElementById("myCheck");
+    var text = document.getElementById("text");
+    if (checkBox.checked == true){
+        text.style.display = "block";
+    } else {
+       text.style.display = "none";
+    }
+}
+</script>
