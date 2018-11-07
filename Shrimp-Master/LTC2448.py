@@ -1,4 +1,4 @@
-#written entirely by Daniel Fingerson
+#written by Daniel Fingerson and Luciana Mendez
 #this is the first steps toward supplying real data from our new 24 bit analalog to digital converter (we were previously using an MCP3008 ADC)
 #currently only reads the differential voltages between the first and second sensor channels (0+ and 1-)
 import spidev
