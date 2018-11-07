@@ -1,3 +1,4 @@
+#Written by Luciana Mendez and Daniel Fingerson
 from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
 import smtplib
