@@ -1,4 +1,4 @@
-
+#Written by Luciana Mendez and Daniel Fingerson
 from time import gmtime, strftime, sleep, time
 import numpy as np
 import matplotlib.pyplot as plt
