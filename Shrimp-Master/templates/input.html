@@ -1,0 +1,30 @@
+<!doctype html>
+{% extends "layouts.html" %}
+{% block title %}Input{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+{% block content %}
+  <div>Input</div>
+  <form method="POST">
+      Enter Message:<br>
+      <input type="text" name="text">
+      <input type="submit" value="submit">
+	Would you like sensor or supplied data: <br>
+	<button onclick="realdata()">Sensor Data"</button>
+	<button onclick="fakedata()">Fake Data"</button>
+	
+  </form> 
+<script>
+function realdata() {
+	localStorage.spoof="0"
+}
+function fakedata() {
+	localStorage.spoof="1"
+}
+</script>
+
+{% endblock %}
