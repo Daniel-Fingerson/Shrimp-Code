@@ -1,7 +1,7 @@
-#Written by Daniel Fingerson
-#All of this code is compltetely irrelevant to the project: this was the first time I had coded software that direclty controlled hardware
-#Therefore, I wrote this code to learn how to talk with a Pi
-#I also learned how to represent/manipulate these pins with a GUI (for easier user accesability)
+#Written by Daniel Fingerson and Luciana Mendez
+#All of this code is compltetely irrelevant to the project: this was the first time we had coded software that direclty controlled hardware
+#Therefore, we wrote this code to learn how to talk with a Pi
+#We also learned how to represent/manipulate these pins with a GUI (for easier user accesability)
 
 import RPi.GPIO as GPIO #module that allows python to interact with GPIO
 GPIO.setmode(GPIO.BCM) #Pins allign with Broadcom chip-specific numbers
