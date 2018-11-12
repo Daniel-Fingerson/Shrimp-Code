@@ -1,4 +1,12 @@
-def read():
-    buf0=['0x01', '0x00', '0x00']
-    spi.transfer(buf0,len(buf0))
-    print('{0:03d} {1:03d} {2:03d}').format(buf0[0],buf0[1],buf0[2])
+def ReadChannel(channel):
+  adc = spi.xfer2([1,(8+channel)<<4,0])
+  data = ((adc[1]&3) << 8) + adc[2]
+  volts= (data * 3.3) / float(1023)
+  return volts
+
+
+def Temp(data):
+  temp = ((data * 330)/float(1023))-50
+  temp = round(temp)
+  return temp
+
